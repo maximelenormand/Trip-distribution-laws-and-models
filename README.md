@@ -9,13 +9,13 @@ ________________________________________________________________________________
 
 This package is created to generate spatial networks as described in [[1]](http://arxiv.org/abs/1506.04889). In this paper, we propose 
 a comparison between the gravity and the intervening opportunities approaches widely used to simulate mobility flows. To fairly compare the two 
-approaches, we need to differentiate the trip distribution laws, gravity or intervening opportunities , and the modeling approach used to generate 
-the flows from the laws. Indeed, both the gravity and the radiation laws can be express as the probability of having a trip from one place to 
+approaches, we need to differentiate the trip distribution laws, gravity or intervening opportunities, and the modeling approach used to generate 
+the flows from the laws. Indeed, both the gravity and the intervening opportunities laws can be express as the probability of having a trip from one place to 
 another and based on these probabilities, the total number of commuters or migrants can then be calculated using different level of constrained 
 models.
 
 First, we compute the probability ***pij*** to have a trip from region ***i*** to another region ***j*** based on the "travel demand" ***mi*** of 
-the region ***i*** (the population is typically used as a proxy here), the "attractivity" ***mj*** of the region ***j*** (usually related to the 
+the region ***i*** (the population is typically used as a surrogate), the "attractivity" ***mj*** of the region ***j*** (usually related to the 
 population in ***j*** too) and the distance ***dij*** between the two regions. In this package we consider six probabilistic laws:
 
 * Gravity law with an exponential distance decay function (**GravExp**).
@@ -30,7 +30,7 @@ population in ***j*** too) and the distance ***dij*** between the two regions. I
 The importance of the distance and/or the scale is adjusted with a parameter **beta** (except for the original radiation law and the uniform law).  
 
 Second, several constrained models are proposed to generate a spatial network from these distribution of probability respecting different level of 
-constraints (preserving the marginals ***Oi*** and/or ***Dj*** of the observed OD matrix) according to the model.
+constraints (preserving the marginals ***Oi*** and/or ***Dj*** of the observed OD matrix) according to the model:
  
 * Unconstrained model (**UM**).
 * Production constrained model (**PCM**).
@@ -42,12 +42,10 @@ constraints (preserving the marginals ***Oi*** and/or ***Dj*** of the observed O
 **Inputs**: 
 
 * *Parameters.csv*: File containing the four parameters:
-
    * Law: **GravExp**, **NGravExp**, **GravPow**, **NGravPow**, **Schneider**, **Rad**, **RadExt** or **Rand**.
    * Model: **UM**, **PCM**, **ACM** or **DCM**.
    * Beta: Parameter used to adjust the importance of the distance and/or the scale. Not necessary for the original radiation law.
    * Replication: Number of replications *r*.
-
 * *Inputs.csv*: File with n lines (n represents the number of regions) and 4 columns (***mi*** and ***mj***, ***Oi*** and ***Dj***).
 * *Distance.csv*: n x n distance matrix.
 * *OD.csv*: n x n observed OD matrix.
