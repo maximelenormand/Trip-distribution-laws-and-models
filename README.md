@@ -39,24 +39,9 @@ constraints (preserving the marginals ***Oi*** and/or ***Dj*** of the observed O
 
 ## Contents of the package
 
-<<<<<<< HEAD
-All the inputs and outputs files are in **csv** format with column names column names in the first row and no row names (the value separator 
-is a semicolon **";"**). Note that the row number and the column number for the matrices is an implicit ID. See the example for more detailed. 
+All the inputs and outputs files are in **csv** format with column names column names in the first row and no row names (the value separator is a semicolon **";"**). Note that the row number and the column number for the matrices is an implicit ID. See the example for more detailed. 
 
 **Inputs**: 
-=======
-**Inputs**: 
-
-* *Parameters.csv*: File containing the four parameters:
-   * Law: **GravExp**, **NGravExp**, **GravPow**, **NGravPow**, **Schneider**, **Rad**, **RadExt** or **Rand**.
-   * Model: **UM**, **PCM**, **ACM** or **DCM**.
-   * Beta: Parameter used to adjust the importance of the distance and/or the scale. Not necessary for the original radiation law.
-   * Replication: Number of replications *r*.
-* *Inputs.csv*: File with n lines (n represents the number of regions) and 4 columns (***mi*** and ***mj***, ***Oi*** and ***Dj***).
-* *Distance.csv*: n x n distance matrix.
-* *OD.csv*: n x n observed OD matrix.
-* *sij.csv*: n x n "opportunity" matrix. Only for the radiation laws, can be generated with the function *Sij.java*.
->>>>>>> origin/master
 
 * ***Parameters.csv***: File containing the four parameters:
    * *Law:* **GravExp**, **NGravExp**, **GravPow**, **NGravPow**, **Schneider**, **Rad**, **RadExt** or **Rand**.
@@ -107,13 +92,11 @@ A zip file containing all the inputs of the **USA** case study is available [her
    * *Beta:* 0.0374466723531956
    * *Replication:* 5
    * *Write_pij:* true
-
 * ***Inputs.csv:*** File with 3018 lines and 4 columns:
     * ***mi*** = population in county ***i***.
     * ***mj*** = population in county ***j***.
     * ***Oi*** = number of out-commuters in county ***i***.
     * ***Dj*** = number of in-commuters in county ***j***.
-
 * ***Distance.csv:*** 3018 x 3018 distance matrix. Great circle distance between the centroids of the counties.
 * ***OD.csv:*** 3018 x 3018 observed OD commuting matrix. 
 
