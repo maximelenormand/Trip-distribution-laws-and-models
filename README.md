@@ -109,7 +109,7 @@ the paper and it has also been used in [[3]](http://www.nature.com/nature/journa
 
 [1] Lenormand *et al.* (2015) [Systematic comparison of trip distribution laws and models.](http://arxiv.org/abs/1506.04889). *Arxiv e-print*, arXiv:1501.07788.
 
-[2] Schneider (1959)[Gravity models and trip distribution theory](http://onlinelibrary.wiley.com/doi/10.1111/j.1435-5597.1959.tb01665.x/abstract). *Papers of the regional science association* 5, 51-58.
+[2] Schneider (1959) [Gravity models and trip distribution theory](http://onlinelibrary.wiley.com/doi/10.1111/j.1435-5597.1959.tb01665.x/abstract). *Papers of the regional science association* 5, 51-58.
 
 [3] Simini *et al.* (2012) [A universal model for mobility and migration patterns](http://www.nature.com/nature/journal/v484/n7392/full/nature10856.html). *Nature 484, 96-100. 
 
