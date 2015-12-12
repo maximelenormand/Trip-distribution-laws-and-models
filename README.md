@@ -35,10 +35,16 @@ constraints (preserving the marginals ***Oi*** and/or ***Dj*** of the observed O
 * Unconstrained model (**UM**).
 * Production constrained model (**PCM**).
 * Attraction constrained model (**ACM**).
-* Double constrained model (**DCM**).
+* Doubly constrained model (**DCM**).
 
 ## Contents of the package
 
+<<<<<<< HEAD
+All the inputs and outputs files are in **csv** format with column names column names in the first row and no row names (the value separator 
+is a semicolon **";"**). Note that the row number and the column number for the matrices is an implicit ID. See the example for more detailed. 
+
+**Inputs**: 
+=======
 **Inputs**: 
 
 * *Parameters.csv*: File containing the four parameters:
@@ -50,17 +56,26 @@ constraints (preserving the marginals ***Oi*** and/or ***Dj*** of the observed O
 * *Distance.csv*: n x n distance matrix.
 * *OD.csv*: n x n observed OD matrix.
 * *sij.csv*: n x n "opportunity" matrix. Only for the radiation laws, can be generated with the function *Sij.java*.
+>>>>>>> origin/master
 
-All the inputs and outputs have column names in the first row and no row names. Note that the row number and the column number for the matrices 
-is an implicit ID. See the example for more detailed.
+* ***Parameters.csv***: File containing the four parameters:
+   * *Law:* **GravExp**, **NGravExp**, **GravPow**, **NGravPow**, **Schneider**, **Rad**, **RadExt** or **Rand**.
+   * *Model:* **UM**, **PCM**, **ACM** or **DCM**.
+   * *Beta:* Parameter used to adjust the importance of the distance and/or the scale. Not necessary for the original radiation law.
+   * *Replication:* Number of replications *r*.
+   * *Write_pij:* *true* to write the matrix of probabilities ***pij*** in a csv file. 
+* ***Inputs.csv:*** File with n lines (n represents the number of regions) and 4 columns (***mi*** and ***mj***, ***Oi*** and ***Dj***).
+* ***Distance.csv:*** n x n distance matrix.
+* ***OD.csv:*** n x n observed OD matrix.
+* ***sij.csv:*** n x n "opportunity" matrix. Only for the intervening opportunities laws, can be generated with the function ***Sij.java***.
 
 **Functions**:
  
-* *TDLM.java*: This class takes as inputs all the inputs described above (except *sij.csv* depending of the case). 
-It returns *r* simulated OD matrices *S_1.csv*, ..., *S_r.csv*.
-* *Sij.java*: This class takes as inputs the files *Inputs.csv* and *Distance.csv* and it returns the "opportunity" matrix *sij.csv*. 
-* *GOF.java*: This class takes as inputs the files *Inputs.csv*, *OD.csv*, *Distance.csv* and *r* simulated OD matrices *S_1.csv*, ..., *S_r.csv*. 
-It returns a file *GOF.csv* containing the three goodness-of-fit measures described in the paper 
+* ***TDLM.java:*** This class takes as inputs all the inputs described above (except ***sij.csv*** depending of the case). 
+It returns *r* simulated OD matrices ***S_1.csv, ..., S_r.csv***.
+* ***Sij.java:*** This class takes as inputs the files ***Inputs.csv*** and ***Distance.csv*** and it returns the "opportunity" matrix ***sij.csv***. 
+* ***GOF.java:*** This class takes as inputs the files ***Inputs.csv***, ***OD.csv***, ***Distance.csv*** and *r* simulated OD matrices ***S_1.csv, ..., S_r.csv***. 
+It returns a file ***GOF.csv*** containing the three goodness-of-fit measures described in the paper 
 (**CPC** [[5]](http://jasss.soc.surrey.ac.uk/15/2/6.html) [[6]](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0045985) 
 [[7]](https://www.jtlu.org/index.php/jtlu/article/view/360), **CPL** and **CPCd**) between the observed OD matrix and each of the simulated 
 OD matrices. 
@@ -86,21 +101,21 @@ The Java files and the inputs must be in the same directory.
 
 A zip file containing all the inputs of the **USA** case study is available [here](https://www.dropbox.com/s/it4h5d7wsfryorg/Example.zip?raw=1). 
 
-* *Parameters.csv*:
+* ***Parameters.csv:***
+   * *Law:* **GravExp**
+   * *Model:* **UM**
+   * *Beta:* 0.0374466723531956
+   * *Replication:* 5
+   * *Write_pij:* true
 
-   * Law: **GravExp**
-   * Model: **UM**
-   * Beta: 0.0374466723531956
-   * Replication: 5
-
-* *Inputs.csv*: File with 3018 lines and 4 columns:
+* ***Inputs.csv:*** File with 3018 lines and 4 columns:
     * ***mi*** = population in county ***i***.
     * ***mj*** = population in county ***j***.
     * ***Oi*** = number of out-commuters in county ***i***.
     * ***Dj*** = number of in-commuters in county ***j***.
 
-* *Distance.csv*: 3018 x 3018 distance matrix. Great circle distance between the centroid of the counties.
-* *OD.csv*: 3018 x 3018 observed OD commuting matrix. 
+* ***Distance.csv:*** 3018 x 3018 distance matrix. Great circle distance between the centroids of the counties.
+* ***OD.csv:*** 3018 x 3018 observed OD commuting matrix. 
 
 The inputs come from the United State Census Bureau. The commuting trips between United States counties in 2000 are available 
 [online](https://www.census.gov/population/www/cen2000/commuting/index.html). This dataset is the **USA** dataset in 
