@@ -46,7 +46,7 @@ All the inputs and outputs files are in **csv** format with column names column 
 * ***Parameters.csv***: File containing the four parameters:
    * *Law:* **GravExp**, **NGravExp**, **GravPow**, **NGravPow**, **Schneider**, **Rad**, **RadExt** or **Rand**.
    * *Model:* **UM**, **PCM**, **ACM** or **DCM**.
-   * *Beta:* Parameter used to adjust the importance of the distance and/or the scale. Not necessary for the original radiation law.
+   * *Beta:* Parameter used to adjust the importance of the distance and/or the scale. Not necessary for the original radiation law or the uniform law.
    * *Replication:* Number of replications *r*.
    * *Write_pij:* *true* to write the matrix of probabilities ***pij*** in a csv file. 
 * ***Inputs.csv:*** File with n lines (n represents the number of regions) and 4 columns (***mi*** and ***mj***, ***Oi*** and ***Dj***).
