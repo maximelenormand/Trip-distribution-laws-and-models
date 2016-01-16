@@ -107,7 +107,7 @@ the paper and it has also been used in [[3]](http://www.nature.com/nature/journa
 
 ## References
 
-[1] Lenormand *et al.* (2016) [Systematic comparison of trip distribution laws and models.](http://www.sciencedirect.com/science/article/pii/S0966692315002422). *Journal of Transport Geography* 51, 158-169.
+[1] Lenormand *et al.* (2016) [Systematic comparison of trip distribution laws and models](http://www.sciencedirect.com/science/article/pii/S0966692315002422). *Journal of Transport Geography* 51, 158-169.
 
 [2] Schneider (1959) [Gravity models and trip distribution theory](http://onlinelibrary.wiley.com/doi/10.1111/j.1435-5597.1959.tb01665.x/abstract). *Papers of the regional science association* 5, 51-58.
 
