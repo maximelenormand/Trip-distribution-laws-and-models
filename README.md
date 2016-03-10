@@ -128,4 +128,4 @@ If you use this code, please cite:
 Lenormand M, Bassolas A & Ramasco JJ (2016) Systematic comparison of trip distribution laws and models. *Journal of Transport Geography* 51, 158-169.
 
 If you need help, find a bug, want to give me advice or feedback, please contact me!
-You can reach me at maxime[at]ifisc.uib-csic.es
+You can reach me at maxime.lenormand[at]irstea.fr
