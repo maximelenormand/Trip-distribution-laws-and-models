@@ -5,7 +5,7 @@ Systematic comparison of trip distribution laws and models
 ______________________________________________________________________________________
 
 
-## Introduction 
+## Description
 
 This package is created to generate spatial networks as described in [[1]](http://arxiv.org/abs/1506.04889). In this paper, we propose 
 a comparison between the gravity and the intervening opportunities approaches widely used to simulate mobility flows. To fairly compare the two 
@@ -111,7 +111,7 @@ the paper and it has also been used in [[3]](http://www.nature.com/nature/journa
 
 [2] Schneider (1959) [Gravity models and trip distribution theory](http://onlinelibrary.wiley.com/doi/10.1111/j.1435-5597.1959.tb01665.x/abstract). *Papers of the regional science association* 5, 51-58.
 
-[3] Simini *et al.* (2012) [A universal model for mobility and migration patterns](http://www.nature.com/nature/journal/v484/n7392/full/nature10856.html). *Nature 484, 96-100. 
+[3] Simini *et al.* (2012) [A universal model for mobility and migration patterns](http://www.nature.com/nature/journal/v484/n7392/full/nature10856.html). *Nature* 484, 96-100. 
 
 [4] Yang *et al.* (2014) [Limits of Predictability in Commuting Flows in the Absence of Data for Calibration](http://www.nature.com/srep/2014/140711/srep05662/full/srep05662.html). *Scientific Reports* 4, 5662.
 
