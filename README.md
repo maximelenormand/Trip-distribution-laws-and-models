@@ -74,11 +74,11 @@ not familiar with these softwares you can also compile and run Java Code from a 
 Before the Java virtual machine can run a Java program, the source code must be compiled into byte-code using the javac compiler 
 using the command: 
 
-*javac TDLM.java*
+**javac TDLM.java**
 
 Once you have successfully compiled your Java Code, you can run the code using the command:
 
-*java TDLM*
+**java TDLM**
 
 The Java files and the inputs must be in the same directory.
 
