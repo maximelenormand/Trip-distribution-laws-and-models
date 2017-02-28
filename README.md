@@ -92,13 +92,13 @@ A zip file containing all the inputs of the **USA** case study is available [her
    * *Beta:* 0.0374466723531956
    * *Replication:* 5
    * *Write_pij:* true
-* ***Inputs.csv:*** File with 3018 lines and 4 columns:
+* ***Inputs.csv:*** File with 3108 lines and 4 columns:
     * ***mi*** = population in county ***i***.
     * ***mj*** = population in county ***j***.
     * ***Oi*** = number of out-commuters in county ***i***.
     * ***Dj*** = number of in-commuters in county ***j***.
-* ***Distance.csv:*** 3018 x 3018 distance matrix. Great circle distance between the centroids of the counties.
-* ***OD.csv:*** 3018 x 3018 observed OD commuting matrix. 
+* ***Distance.csv:*** 3108 x 3108 distance matrix. Great circle distance between the centroids of the counties.
+* ***OD.csv:*** 3108 x 3108 observed OD commuting matrix. 
 
 The inputs come from the United State Census Bureau. The commuting trips between United States counties in 2000 are available 
 [online](https://www.census.gov/population/www/cen2000/commuting/index.html). This dataset is the **USA** dataset in 
