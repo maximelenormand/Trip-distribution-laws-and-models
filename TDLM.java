@@ -171,6 +171,7 @@ public class TDLM {
                 }
                 writer.println();
             }
+            writer.close();
         }
     }
 
