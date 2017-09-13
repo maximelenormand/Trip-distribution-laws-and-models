@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2015 Maxime Lenormand. All rights reserved. Code under License GPLv3.
+ *  Author: Maxime Lenormand (2015)
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License version 3.
