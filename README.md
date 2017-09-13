@@ -1,10 +1,6 @@
 Systematic comparison of trip distribution laws and models
 ========================================================================
 
- Copyright 2015 Maxime Lenormand. All rights reserved. Code under License GPLv3.
-______________________________________________________________________________________
-
-
 ## Description
 
 This package is created to generate spatial networks as described in [[1]](http://arxiv.org/abs/1506.04889). In this paper, we propose 
