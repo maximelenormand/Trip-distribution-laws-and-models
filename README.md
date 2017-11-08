@@ -117,7 +117,7 @@ the paper and it has also been used in [[3]](http://www.nature.com/nature/journa
 
 [7] Lenormand *et al.* (2014) [Generating French Virtual Commuting Network at Municipality Level](https://www.jtlu.org/index.php/jtlu/article/view/360). *Journal of Transport and Land Use* 7, 43-55.
 
-##Citation
+## Citation
 
 If you use this code, please cite:
 
