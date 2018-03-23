@@ -3,7 +3,7 @@ Systematic comparison of trip distribution laws and models
 
 ## Description
 
-This package is created to generate spatial networks as described in [[1]](http://arxiv.org/abs/1506.04889). In this paper, we propose 
+This package is created to generate spatial networks as described in [[1]](http://www.sciencedirect.com/science/article/pii/S0966692315002422). In this paper, we propose 
 a comparison between the gravity and the intervening opportunities approaches widely used to simulate mobility flows. To fairly compare the two 
 approaches, we need to differentiate the trip distribution laws, gravity or intervening opportunities, and the modeling approach used to generate 
 the flows from the laws. Indeed, both the gravity and the intervening opportunities laws can be express as the probability of having a trip from one place to 
@@ -121,7 +121,7 @@ the paper and it has also been used in [[3]](http://www.nature.com/nature/journa
 
 If you use this code, please cite:
 
-Lenormand M, Bassolas A & Ramasco JJ (2016) Systematic comparison of trip distribution laws and models. *Journal of Transport Geography* 51, 158-169.
+Lenormand M, Bassolas A & Ramasco JJ (2016) [Systematic comparison of trip distribution laws and models.](http://www.sciencedirect.com/science/article/pii/S0966692315002422) *Journal of Transport Geography* 51, 158-169.
 
 If you need help, find a bug, want to give me advice or feedback, please contact me!
 You can reach me at maxime.lenormand[at]irstea.fr
