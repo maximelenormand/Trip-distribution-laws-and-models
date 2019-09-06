@@ -80,7 +80,7 @@ The Java files and the inputs must be in the same directory.
 
 ## Example
 
-A zip file containing all the inputs of the **USA** case study is available [here](https://www.dropbox.com/s/it4h5d7wsfryorg/Example.zip?raw=1). 
+A zip file containing all the inputs of the **USA** case study is available [here](https://www.mmmycloud.com/index.php/s/g2XQjoJGX69kcw8). 
 
 * ***Parameters.csv:***
    * *Law:* **GravExp**
