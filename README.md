@@ -103,7 +103,7 @@ the paper and it has also been used in [[3]](http://www.nature.com/nature/journa
 
 ## References
 
-[1] Lenormand *et al.* (2016) [Systematic comparison of trip distribution laws and models](http://www.sciencedirect.com/science/article/pii/S0966692315002422). *Journal of Transport Geography* 51, 158-169.
+[1] Lenormand *et al.* (2016) [Systematic comparison of trip distribution laws and models](https://www.maximelenormand.com/Publications#trippaper). *Journal of Transport Geography* 51, 158-169.
 
 [2] Schneider (1959) [Gravity models and trip distribution theory](http://onlinelibrary.wiley.com/doi/10.1111/j.1435-5597.1959.tb01665.x/abstract). *Papers of the regional science association* 5, 51-58.
 
@@ -121,7 +121,7 @@ the paper and it has also been used in [[3]](http://www.nature.com/nature/journa
 
 If you use this code, please cite:
 
-Lenormand M, Bassolas A & Ramasco JJ (2016) [Systematic comparison of trip distribution laws and models.](http://www.sciencedirect.com/science/article/pii/S0966692315002422) *Journal of Transport Geography* 51, 158-169.
+Lenormand M, Bassolas A & Ramasco JJ (2016) [Systematic comparison of trip distribution laws and models.](https://www.maximelenormand.com/Publications#trippaper) *Journal of Transport Geography* 51, 158-169.
 
 If you need help, find a bug, want to give me advice or feedback, please contact me!
 You can reach me at maxime.lenormand[at]inrae.fr
