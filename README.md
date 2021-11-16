@@ -35,7 +35,7 @@ constraints (preserving the marginals ***Oi*** and/or ***Dj*** of the observed O
 
 ## Contents of the package
 
-All the inputs and outputs files are in **csv** format with column names column names in the first row and no row names (the value separator is a semicolon **";"**). Note that the row number and the column number for the matrices is an implicit ID. See the example for more detailed. 
+All the inputs and outputs files are in **csv** format with column names in the first row and no row names (the value separator is a semicolon **";"**). Note that the row number and the column number for the matrices is an implicit ID. See the example for more detailed. 
 
 **Inputs**: 
 
