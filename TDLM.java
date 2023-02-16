@@ -59,17 +59,17 @@ public class TDLM {
         }
 
         //Inputs
-        int[] mi = new int[n];  //Number of inhabitants at origin (mi)
-        int[] mj = new int[n];  //Number of inhabitants at destination (mj)
-        int[] Oi = new int[n];  //Number of out-commuters (Oi) 
-        int[] Dj = new int[n];  //Number of in-commuters (Dj)
+        double[] mi = new double[n];  //Number of inhabitants at origin (mi)
+        double[] mj = new double[n];  //Number of inhabitants at destination (mj)
+        int[] Oi = new int[n];        //Number of out-commuters (Oi) 
+        int[] Dj = new int[n];        //Number of in-commuters (Dj)
         scan = new Scanner(new File(wd + "Inputs.csv"));
         scan.nextLine();
         int k = 0;
         while (scan.hasNextLine()) {
             cols = scan.nextLine().split(";");
-            mi[k] = Integer.parseInt(cols[0]);
-            mj[k] = Integer.parseInt(cols[1]);
+            mi[k] = Double.parseDouble(cols[0]);
+            mj[k] = Double.parseDouble(cols[1]);
             Oi[k] = Integer.parseInt(cols[2]);
             Dj[k] = Integer.parseInt(cols[3]);
             k++;
@@ -120,19 +120,24 @@ public class TDLM {
                 }
             }
             //Write
-            PrintWriter writerpij = new PrintWriter(new File("pij.csv"));
+            PrintWriter writerpij = new PrintWriter(new File(wd + "pij.csv"));
             for (int j = 0; j < pij.length; j++) {
                 writerpij.print("V" + (j + 1));
-                writerpij.print(";");
+                if(j < (pij.length-1)) {
+                    writerpij.print(";");
+                }
             }
             writerpij.println();
             for (int i = 0; i < pij.length; i++) {
                 for (int j = 0; j < pij.length; j++) {
                     writerpij.print(pij[i][j] / sumpij);
-                    writerpij.print(";");
+                    if(j < (pij.length-1)) {
+                        writerpij.print(";");
+                    }
                 }
                 writerpij.println();
             }
+            writerpij.close();
         }
 
         //Loop replications
@@ -158,16 +163,20 @@ public class TDLM {
             }
 
             //Write the resulting simulated OD matrix in a file 
-            PrintWriter writer = new PrintWriter(new File("S_" + (r + 1) + ".csv"));
+            PrintWriter writer = new PrintWriter(new File(wd + "S_" + (r + 1) + ".csv"));
             for (int j = 0; j < S.length; j++) {
                 writer.print("V" + (j + 1));
-                writer.print(";");
+                if(j < (S.length-1)) {
+                    writer.print(";");
+                }
             }
             writer.println();
             for (int i = 0; i < S.length; i++) {
                 for (int j = 0; j < S.length; j++) {
                     writer.print(S[i][j]);
-                    writer.print(";");
+                    if(j < (S.length-1)) {
+                        writer.print(";");
+                    }
                 }
                 writer.println();
             }
@@ -177,7 +186,7 @@ public class TDLM {
 
     //proba: generate the matrix pij according to the law (GravExp, GravPow, NGravExp, NGravPow, Schneider, Rad, RadExt and Rand)
     //inputs: law, mi, mj and beta
-    static double[][] proba(String law, double[][] dij, double[][] sij, int[] mi, int[] mj, double beta) {
+    static double[][] proba(String law, double[][] dij, double[][] sij, double[] mi, double[] mj, double beta) {
 
         int n = mi.length;                 //Number of regions
         double[][] W = new double[n][n];   //Output
@@ -187,7 +196,7 @@ public class TDLM {
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
                     if (i != j) {
-                        W[i][j] = ((double) mi[i]) * ((double) mj[j]) * Math.exp((dij[i][j]) * (-beta));
+                        W[i][j] = ((double) mi[i]) * (mj[j]) * Math.exp((dij[i][j]) * (-beta));
                     } else {
                         W[i][j] = 0;
                     }

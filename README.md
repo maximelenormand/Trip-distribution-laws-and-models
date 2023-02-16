@@ -3,16 +3,16 @@ Systematic comparison of trip distribution laws and models
 
 ## Description
 
-This package is created to generate spatial networks as described in [[1]](http://www.sciencedirect.com/science/article/pii/S0966692315002422). In this paper, we propose 
+This package has been designed to estimate mobility flows as described in [[1]](http://www.sciencedirect.com/science/article/pii/S0966692315002422). In this paper, we propose 
 a comparison between the gravity and the intervening opportunities approaches widely used to simulate mobility flows. To fairly compare the two 
 approaches, we need to differentiate the trip distribution laws, gravity or intervening opportunities, and the modeling approach used to generate 
 the flows from the laws. Indeed, both the gravity and the intervening opportunities laws can be express as the probability of having a trip from one place to 
 another and based on these probabilities, the total number of commuters or migrants can then be calculated using different level of constrained 
 models.
 
-First, we compute the probability ***pij*** to have a trip from region ***i*** to another region ***j*** based on the "travel demand" ***mi*** of 
+First, we compute the probability ***pij*** to observe a trip from region ***i*** to another region ***j*** based on the "travel demand" ***mi*** of 
 the region ***i*** (the population is typically used as a surrogate), the "attractivity" ***mj*** of the region ***j*** (usually related to the 
-population in ***j*** too) and the distance ***dij*** between the two regions. In this package we consider six probabilistic laws:
+population in ***j*** too) and the distance ***dij*** between the two regions. In this package we consider eight probabilistic laws:
 
 * Gravity law with an exponential distance decay function (**GravExp**).
 * Normalized gravity law with an exponential distance decay function (**NGravExp**).
@@ -48,11 +48,11 @@ All the inputs and outputs files are in **csv** format with column names in the 
 * ***Inputs.csv:*** File with n lines (n represents the number of regions) and 4 columns (***mi*** and ***mj***, ***Oi*** and ***Dj***).
 * ***Distance.csv:*** n x n distance matrix.
 * ***OD.csv:*** n x n observed OD matrix.
-* ***sij.csv:*** n x n "opportunity" matrix. Only for the intervening opportunities laws, can be generated with the function ***Sij.java***.
+* ***Sij.csv:*** n x n "opportunity" matrix. Only for the intervening opportunities laws, can be generated with the function ***Sij.java***.
 
 **Functions**:
  
-* ***TDLM.java:*** This class takes as inputs all the inputs described above (except ***sij.csv*** depending of the case). 
+* ***TDLM.java:*** This class takes as inputs all the inputs described above (except ***Sij.csv*** depending of the case). 
 It returns *r* simulated OD matrices ***S_1.csv, ..., S_r.csv***.
 * ***Sij.java:*** This class takes as inputs the files ***Inputs.csv*** and ***Distance.csv*** and it returns the "opportunity" matrix ***sij.csv***. 
 * ***GOF.java:*** This class takes as inputs the files ***Inputs.csv***, ***OD.csv***, ***Distance.csv*** and *r* simulated OD matrices ***S_1.csv, ..., S_r.csv***. 
@@ -64,7 +64,7 @@ OD matrices.
 ## Compiling
 
 The package contains the source code (Java) and an example of inputs (see below). Java Code can be easily run and compiled with IDEs such as 
-[Netbeans](https://netbeans.org/kb/docs/java/quickstart.html) or [Eclipse](https://eclipse.org/). If you are 
+[Apache Netbeans](https://netbeans.apache.org/) or [Eclipse](https://eclipse.org/). If you are 
 not familiar with these softwares you can also compile and run Java Code from a Command Line.
 
 Before the Java virtual machine can run a Java program, the source code must be compiled into byte-code using the javac compiler 
@@ -97,9 +97,13 @@ A zip file containing all the inputs of the **USA** case study is available [her
 * ***OD.csv:*** 3108 x 3108 observed OD commuting matrix. 
 
 The inputs come from the United State Census Bureau. The commuting trips between United States counties in 2000 are available 
-[online](https://www.census.gov/population/www/cen2000/commuting/index.html). This dataset is the **USA** dataset in 
+[online](https://www2.census.gov/programs-surveys/decennial/tables/2000/county-to-county-worker-flow-files/). This dataset is the **USA** dataset in 
 the paper and it has also been used in [[3]](http://www.nature.com/nature/journal/v484/n7392/full/nature10856.html) and 
 [[6]](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0045985).
+
+## R package
+
+We recently developed an [R package](https://epivec.github.io/TDLM/) to facilitate the use of these three functions (and more) with R. 
 
 ## References
 

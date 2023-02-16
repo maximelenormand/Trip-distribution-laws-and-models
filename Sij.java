@@ -34,13 +34,13 @@ public class Sij {
         }
 
         //Inputs
-        int[] mj = new int[n];  //Number of inhabitants at destination (mj)
+        double[] mj = new double[n];  //Number of inhabitants at destination (mj)
         scan = new Scanner(new File(wd + "Inputs.csv"));
         scan.nextLine();
         int k = 0;
         while (scan.hasNextLine()) {
             String[] cols = scan.nextLine().split(";");
-            mj[k] = Integer.parseInt(cols[1]);
+            mj[k] = Double.parseDouble(cols[1]);
             k++;
         }
 
@@ -60,13 +60,13 @@ public class Sij {
 
         //Compute the matrix of opportunities sij: Number of opportunities located in a circle of radius dij centered in i
         //(excuding the source and the destination)
-        int[][] S = new int[n][n];   //sij
+        double[][] S = new double[n][n];   //sij
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (i == j) {
                     S[i][j] = 0;
                 } else {
-                    int r = 0;
+                    double r = 0;
                     for (int l = 0; l < n; l++) {
                         if ((dij[i][l] <= dij[i][j]) && (i != l) && (l != j)) {
                             r = r + mj[l];
@@ -78,19 +78,24 @@ public class Sij {
         }
 
         //Write the resulting matrix in a file
-        try (PrintWriter writer = new PrintWriter(new File(wd + "sij.csv"))) {
+        try (PrintWriter writer = new PrintWriter(new File(wd + "Sij.csv"))) {
             for (int j = 0; j < S.length; j++) {
                 writer.print("V" + (j + 1));
-                writer.print(";");
+                if(j < (S.length-1)) {
+                    writer.print(";");
+                }
             }
             writer.println();
             for (int i = 0; i < S.length; i++) {
                 for (int j = 0; j < S.length; j++) {
                     writer.print(S[i][j]);
-                    writer.print(";");
+                    if(j < (S.length-1)) {
+                        writer.print(";");
+                    }
                 }
                 writer.println();
             }
+            writer.close();
         }
     }
 }
