@@ -1,6 +1,11 @@
 Systematic comparison of trip distribution laws and models
 ================================================================================
 
+## R package
+
+We recently developed an [R package](https://epivec.github.io/TDLM/) to 
+facilitate the use of this package (and more) with R. 
+
 ## Description
 
 This package has been designed to estimate mobility flows as described in [[1]](http://www.sciencedirect.com/science/article/pii/S0966692315002422). In this paper, we propose 
@@ -100,10 +105,6 @@ The inputs come from the United State Census Bureau. The commuting trips between
 [online](https://www2.census.gov/programs-surveys/decennial/tables/2000/county-to-county-worker-flow-files/). This dataset is the **USA** dataset in 
 the paper and it has also been used in [[3]](http://www.nature.com/nature/journal/v484/n7392/full/nature10856.html) and 
 [[6]](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0045985).
-
-## R package
-
-We recently developed an [R package](https://epivec.github.io/TDLM/) to facilitate the use of these three functions (and more) with R. 
 
 ## References
 
