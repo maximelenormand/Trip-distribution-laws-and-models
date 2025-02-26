@@ -67,7 +67,7 @@ ID. See the example for more detailed.
 * ***OD.csv:*** n x n observed OD matrix.
 * ***Sij.csv:*** n x n "opportunity" matrix. Only for the intervening opportunities laws, can be generated with the function ***Sij.java***.
 
-**Classes**:
+**Classes**
  
 * ***TDLM.java:*** This class takes as inputs all the inputs described above (except ***Sij.csv*** depending of the case). 
 It returns *r* simulated OD matrices ***S_1.csv, ..., S_r.csv***.
@@ -103,13 +103,13 @@ The Java files and the inputs must be in the same directory.
 A zip file containing all the inputs of the **USA** case study is available 
 [here](https://www.mmmycloud.com/index.php/s/g2XQjoJGX69kcw8). 
 
-* ***Parameters.csv:***
+* ***Parameters.csv***
    * *Law:* **GravExp**
    * *Model:* **UM**
    * *Beta:* 0.0374466723531956
    * *Replication:* 5
    * *Write_pij:* true
-* ***Inputs.csv:*** File with 3108 lines and 4 columns:
+* ***Inputs.csv*** File with 3108 lines and 4 columns
     * ***mi*** = population in county ***i***.
     * ***mj*** = population in county ***j***.
     * ***Oi*** = number of out-commuters in county ***i***.
