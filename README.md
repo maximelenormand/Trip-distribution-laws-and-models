@@ -2,7 +2,7 @@
 
 ## R package
 
-We recently developed an [R package](https://epivec.github.io/TDLM/) to 
+We recently developed an [R package](https://rtdlm.github.io/TDLM/) to 
 facilitate the use of the Java scripts (and more) with R. 
 
 ## Description
