@@ -1,9 +1,10 @@
 # Systematic comparison of trip distribution laws and models
 
-## R package
+## R and Python packages
 
-We recently developed an [R package](https://rtdlm.github.io/TDLM/) to 
-facilitate the use of the Java scripts (and more) with R. 
+We recently developed an [R package](https://rtdlm.github.io/TDLM/) and a
+[Python package](https://rtdlm.github.io/PyTDLM/) to replace the Java scripts
+and provide additional functionality.
 
 ## Description
 
